@@ -1,0 +1,722 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Version 4.0.0-rc.2 &mdash; CodeIgniter4 4.0.0-rc.3 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/ci-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/citheme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="CodeIgniter4 4.0.0-rc.3 documentation" href="../index.html"/>
+        <link rel="up" title="Change Logs" href="index.html"/>
+        <link rel="next" title="Version 4.0.0-rc.1" href="v4.0.0-rc.1.html"/>
+        <link rel="prev" title="Version 4.0.0-rc.3" href="v4.0.0-rc.3.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CodeIgniter4
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Bienvenue sur CodeIgniter4</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/index.html">CodeIgniter4 Overview</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/index.html">General Topics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../incoming/index.html">Controllers and Routing</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../outgoing/index.html">Building Responses</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../database/index.html">Working With Databases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../models/index.html">Modeling Data</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dbmgmt/index.html">Managing Databases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../libraries/index.html">Library Reference</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../helpers/index.html">Helpers</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../testing/index.html">Testing</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">Command Line Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../extending/index.html">Extending CodeIgniter</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../license.html">The MIT License (MIT)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Change Logs</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#version-version">Version 4.0-dev</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="next.html">Version 4.0-dev</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-rc.3.html">Version 4.0.0-rc.3</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Version 4.0.0-rc.2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#prs-merged">PRs merged:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-rc.1.html">Version 4.0.0-rc.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-beta.4.html">Version 4.0.0-beta.4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-beta.3.html">Version 4.0.0-beta.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-beta.2.html">Version 4.0.0-beta.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-beta.1.html">Version 4.0.0-beta.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-alpha.5.html">Version 4.0.0-alpha.5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-alpha.4.html">Version 4.0.0-alpha.4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-alpha.3.html">Version 4.0.0-alpha.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-alpha.2.html">Version 4.0.0-alpha.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-alpha.1.html">Version 4.0.0-alpha.1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CodeIgniter4</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Change Logs</a> &raquo;</li>
+        
+      <li>Version 4.0.0-rc.2</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="version-4-0-0-rc-2">
+<h1>Version 4.0.0-rc.2<a class="headerlink" href="#version-4-0-0-rc-2" title="Permalink to this headline">¶</a></h1>
+<p>Release Date: Sept 27, 2019</p>
+<p><strong>RC.2 release of CodeIgniter4</strong></p>
+<p>Enhancements:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>query builder testability simplified with new property, but dropped</dt><dd><p>method parameters (breaking change)</p>
+</dd>
+</dl>
+</li>
+<li><p>database, migrations and sessions beefed up</p></li>
+<li><p>numerous smaller bugs corrected</p></li>
+</ul>
+<p>App changes:</p>
+<ul class="simple">
+<li><p>Config/Constants, Paths &amp; some config settings have had changes</p></li>
+</ul>
+<p>Message changes:</p>
+<ul class="simple">
+<li><p>N/A</p></li>
+</ul>
+<p>The list of changed files follows, with PR numbers shown.</p>
+<ul class="simple">
+<li><p>admin/</p></li>
+<li><dl class="simple">
+<dt>app/</dt><dd><ul>
+<li><dl class="simple">
+<dt>Config/</dt><dd><ul>
+<li><p>Boot/* #2241</p></li>
+<li><p>Constants #2183</p></li>
+<li><p>Paths #2181</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>public/</p></li>
+<li><dl class="simple">
+<dt>system/</dt><dd><ul>
+<li><dl class="simple">
+<dt>CLI/</dt><dd><ul>
+<li><p>BaseCommand #2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Database/</dt><dd><ul>
+<li><p>MySQLi/Connection #2201, 2229</p></li>
+<li><dl class="simple">
+<dt>Postgre/</dt><dd><ul>
+<li><p>BaseBuilder #2269</p></li>
+<li><p>Connection #2201</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>SQLite3/Connection #2201, 2228, 2230</p></li>
+<li><p>BaseBuilder #2257, 2232, 2269, 2270</p></li>
+<li><p>BaseConnection #2208, 2213, 2231</p></li>
+<li><p>Config #2224</p></li>
+<li><p>Forge #2205</p></li>
+<li><p>MigrationRunner #2191</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Debug/</dt><dd><ul>
+<li><p>Exceptions #2262</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Encryption/</dt><dd><ul>
+<li><p>Encryption #2231</p></li>
+<li><p>Handlers/BaseHandler #2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Files/</dt><dd><ul>
+<li><p>FileCollection #2265</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>HTTP/</dt><dd><ul>
+<li><p>CURLRequest #2168</p></li>
+<li><p>IncomingRequest #2265</p></li>
+<li><p>Request #2253</p></li>
+<li><p>Response #2253</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>I18n/</dt><dd><ul>
+<li><p>Time #2231</p></li>
+<li><p>TimeDifference #2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Images/</dt><dd><ul>
+<li><p>Handlers/BaseHandler #2246</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>RESTful/</dt><dd><ul>
+<li><p>ResourcePresenter #2271</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Security/</dt><dd><ul>
+<li><p>Security #2240</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Session/</dt><dd><ul>
+<li><p>Session #2197, 2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Test/</dt><dd><ul>
+<li><p>CIDatabaseTestCase #2205</p></li>
+<li><p>CIDatabaseUnitTestCase #2184</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Validation/</dt><dd><ul>
+<li><p>FileRules #2265</p></li>
+<li><p>Validation #2268</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>View/</dt><dd><ul>
+<li><p>Parser #2264</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Common #2200, 2209, 2261</p></li>
+<li><p>Model #2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>tests/_support/</p></li>
+<li><dl class="simple">
+<dt>tests/system/</dt><dd><ul>
+<li><dl class="simple">
+<dt>Commands/</dt><dd><ul>
+<li><p>CommandClassTest #2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Database/</dt><dd><ul>
+<li><dl class="simple">
+<dt>Builder/</dt><dd><ul>
+<li><p>GetTest #2232</p></li>
+<li><p>CountTest #2269</p></li>
+<li><p>DeleteTest #2269</p></li>
+<li><p>EmptyTest #2269</p></li>
+<li><p>GetTest #2269</p></li>
+<li><p>GroupTest #2257</p></li>
+<li><p>InsertTest #2269</p></li>
+<li><p>ReplaceTest #2269</p></li>
+<li><p>TruncateTest #2269</p></li>
+<li><p>UpdateTest #2269</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Live/</dt><dd><ul>
+<li><p>EscapeTest #2229</p></li>
+<li><p>ForgeTest #2201, 2211</p></li>
+<li><p>GroupTest #2257</p></li>
+<li><p>MetadataTest #2211</p></li>
+<li><p>ModelTest #2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>BaseConnectionTest #2229, 2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Encryption/</dt><dd><ul>
+<li><p>EncryptionTest #2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Helpers/</dt><dd><ul>
+<li><p>URLHelperTest #2259</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>HTTP/</dt><dd><ul>
+<li><p>CURLRequestTest #2168</p></li>
+<li><p>FileCOllectionTest #2265</p></li>
+<li><p>URITest #2259</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>I18n/</dt><dd><ul>
+<li><p>TimeDifferenceTest #2231</p></li>
+<li><p>TimeTest #2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Pager/</dt><dd><ul>
+<li><p>pagerTest #2259</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>RESTful/</dt><dd><ul>
+<li><p>ResourcePresenterTest #2271</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Session/</dt><dd><ul>
+<li><p>SessionTest #2231</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>View/</dt><dd><ul>
+<li><p>ParserTest #2264</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>user_guide_src/</dt><dd><ul>
+<li><dl class="simple">
+<dt>concepts/</dt><dd><ul>
+<li><p>structure #2221</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>database/</dt><dd><ul>
+<li><p>metadata #2199, 2201, 2208</p></li>
+<li><p>queries #2208</p></li>
+<li><p>query_builder #2257, 2232, 2269</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>dbmgmt/</dt><dd><ul>
+<li><p>migration #2190, 2191</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>extending/</dt><dd><ul>
+<li><p>contributing #2221</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>general/</dt><dd><ul>
+<li><p>errors #2221</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>helpera/</dt><dd><ul>
+<li><p>url_helper #2259</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>incoming/</dt><dd><ul>
+<li><p>restful #2189</p></li>
+<li><p>routing #2221</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>installation/</dt><dd><ul>
+<li><p>troubleshooting #2260</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>libraries/</dt><dd><ul>
+<li><p>encryption #2221</p></li>
+<li><p>pagination #2216</p></li>
+<li><p>time #2221</p></li>
+<li><p>uti #2216</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>outgoing/</dt><dd><ul>
+<li><p>api_responses #2245</p></li>
+<li><p>view_layouts #2218</p></li>
+<li><p>view_parser #2218, 2264</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>testing/</dt><dd><ul>
+<li><p>controllers #2221</p></li>
+<li><p>debugging #2221, 2209</p></li>
+<li><p>feature #2218, 2221</p></li>
+<li><p>overview #2221</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>tutorial/</dt><dd><ul>
+<li><p>news_section #2221</p></li>
+<li><p>static_pages #2221</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="section" id="prs-merged">
+<h2>PRs merged:<a class="headerlink" href="#prs-merged" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>#2271 fix ResourcePresenter::setModel()</p></li>
+<li><p>#2270 groupStart() refactorization</p></li>
+<li><p>#2269 testMode() method for BaseBuilder</p></li>
+<li><p>#2268 Validation session use only if exists</p></li>
+<li><p>#2267 Tests setUp and tearDown: void</p></li>
+<li><p>#2265 Fix a validation issue on multiple file upload</p></li>
+<li><p>#2264 fix. Parser allow other extension</p></li>
+<li><p>#2262 Fix parameter type in Debug/Exceptions</p></li>
+<li><p>#2261 Fix lang() signature</p></li>
+<li><p>#2260 Explain the whoops page</p></li>
+<li><p>#2259 Add URI &amp; url_helper tests</p></li>
+<li><p>#2257 Several updates to the HAVING clauses</p></li>
+<li><p>#2253 Fix invalid parameters</p></li>
+<li><p>#2246 EXIF not supported for GIF</p></li>
+<li><p>#2245 Fix class ref parameter types</p></li>
+<li><p>#2241 Fix ini_set parameter type</p></li>
+<li><p>#2240 Handle JSON POSTs in CSRF</p></li>
+<li><p>#2232 Fixes BaseBuilder getWhere() bug</p></li>
+<li><p>#2231 Add magic __isset to classes with __get</p></li>
+<li><p>#2230 Add escape to SQLite _listTables()</p></li>
+<li><p>#2229 MySQLi escapeLikeStringDirect()</p></li>
+<li><p>#2228 Exclude <cite>sqlite_%</cite> from listTables()</p></li>
+<li><p>#2224 change new ConfigDatabase() to config(‘Database’)</p></li>
+<li><p>#2221 Documentation fixes</p></li>
+<li><p>#2218 Typo corrected</p></li>
+<li><p>#2216 Update uri.rst</p></li>
+<li><p>#2213 Filter listTables cache response on constrainPrefix</p></li>
+<li><p>#2211 Add listTable() tests</p></li>
+<li><p>#2209 Add trace()</p></li>
+<li><p>#2208 Add $db-&gt;getPrefix()</p></li>
+<li><p>#2205 Fix empty() bug on DBPrefix</p></li>
+<li><p>#2201 Foreign key columns</p></li>
+<li><p>#2200 Notify Kint of dd alias</p></li>
+<li><p>#2199 Add getForeignKeyData to User Guide</p></li>
+<li><p>#2187 Update Session.php</p></li>
+<li><p>#2191 Migration rollback reverse</p></li>
+<li><p>#2190 Fix name of ForeignKeyChecks</p></li>
+<li><p>#2189 missing return</p></li>
+<li><p>#2184 Fix case on “Seeds/” directory</p></li>
+<li><p>#2183 Check <cite>defined</cite> for constants</p></li>
+<li><p>#2181 Remove copy-paste extraneous text</p></li>
+<li><p>#2168 Fix for CURL for ‘debug’ option</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="v4.0.0-rc.1.html" class="btn btn-neutral float-right" title="Version 4.0.0-rc.1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="v4.0.0-rc.3.html" class="btn btn-neutral" title="Version 4.0.0-rc.3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 CodeIgniter Foundation.
+      Last updated on Jan 22, 2020.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'4.0.0-rc.3',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  false,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

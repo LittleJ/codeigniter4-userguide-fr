@@ -1,0 +1,533 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Version 4.0.0-alpha.1 &mdash; CodeIgniter4 4.0.0-rc.3 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/ci-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/citheme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="CodeIgniter4 4.0.0-rc.3 documentation" href="../index.html"/>
+        <link rel="up" title="Change Logs" href="index.html"/>
+        <link rel="prev" title="Version 4.0.0-alpha.2" href="v4.0.0-alpha.2.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CodeIgniter4
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Bienvenue sur CodeIgniter4</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">Tutorial</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/index.html">CodeIgniter4 Overview</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/index.html">General Topics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../incoming/index.html">Controllers and Routing</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../outgoing/index.html">Building Responses</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../database/index.html">Working With Databases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../models/index.html">Modeling Data</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dbmgmt/index.html">Managing Databases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../libraries/index.html">Library Reference</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../helpers/index.html">Helpers</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../testing/index.html">Testing</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">Command Line Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../extending/index.html">Extending CodeIgniter</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../license.html">The MIT License (MIT)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Change Logs</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#version-version">Version 4.0-dev</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="next.html">Version 4.0-dev</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-rc.3.html">Version 4.0.0-rc.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-rc.2.html">Version 4.0.0-rc.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-rc.1.html">Version 4.0.0-rc.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-beta.4.html">Version 4.0.0-beta.4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-beta.3.html">Version 4.0.0-beta.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-beta.2.html">Version 4.0.0-beta.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-beta.1.html">Version 4.0.0-beta.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-alpha.5.html">Version 4.0.0-alpha.5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-alpha.4.html">Version 4.0.0-alpha.4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-alpha.3.html">Version 4.0.0-alpha.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="v4.0.0-alpha.2.html">Version 4.0.0-alpha.2</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Version 4.0.0-alpha.1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CodeIgniter4</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Change Logs</a> &raquo;</li>
+        
+      <li>Version 4.0.0-alpha.1</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="version-4-0-0-alpha-1">
+<h1>Version 4.0.0-alpha.1<a class="headerlink" href="#version-4-0-0-alpha-1" title="Permalink to this headline">¶</a></h1>
+<p>Release Date: September 28, 2018</p>
+<p><strong>Rewrite of the CodeIgniter framework</strong></p>
+<dl class="simple">
+<dt>New packages list:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>API</dt><dd><ul>
+<li><p>\ ResponseTrait</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Autoloader</dt><dd><ul>
+<li><p>\ AutoLoader, FileLocator</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>CLI</dt><dd><ul>
+<li><p>\ BaseCommand, CLI, CommandRunner, Console</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Cache</dt><dd><ul>
+<li><p>\ CacheFactory, CacheInterface</p></li>
+<li><p>\ Handlers … Dummy, File, Memcached, Predis, Redis, Wincache</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Commands</dt><dd><ul>
+<li><p>\ Help, ListCommands</p></li>
+<li><p>\ Database \ CreateMigration, MigrateCurrent, MigrateLatest, MigrateRefresh,
+MigrateRollback, MigrateStatus, MigrateVersion, Seed</p></li>
+<li><p>\ Server \ Serve</p></li>
+<li><p>\ Sessions \ CreateMigration</p></li>
+<li><p>\ Utilities \ Namespaces, Routes</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Config</dt><dd><ul>
+<li><p>\ AutoloadConfig, BaseConfig, BaseService, Config, DotEnv, ForeignCharacters,
+Routes, Services, View</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Database</dt><dd><ul>
+<li><p>\ BaseBuilder, BaseConnection, BasePreparedQuery, BaseResult, BaseUtils, Config,
+ConnectionInterface, Database, Forge, Migration, MigrationRunner, PreparedQueryInterface, Query,
+QueryInterface, ResultInterface, Seeder</p></li>
+<li><p>\ MySQLi \ Builder, Connection, Forge, PreparedQuery, Result</p></li>
+<li><p>\ Postgre \ Builder, Connection, Forge, PreparedQuery, Result, Utils</p></li>
+<li><p>\ SQLite3 \ Builder, Connection, Forge, PreparedQuery, Result, Utils</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Debug</dt><dd><ul>
+<li><p>\ Exceptions, Iterator, Timer, Toolbar</p></li>
+<li><p>\ Toolbar \ Collectors…</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Email</dt><dd><ul>
+<li><p>\ Email</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Events</dt><dd><ul>
+<li><p>\ Events</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Files</dt><dd><ul>
+<li><p>\ File</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Filters</dt><dd><ul>
+<li><p>\ FilterInterface, Filters</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Format</dt><dd><ul>
+<li><p>\ FormatterInterface, JSONFormatter, XMLFormatter</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>HTTP</dt><dd><ul>
+<li><p>\ CLIRequest, CURLRequest, ContentSecurityPolicy, Header,
+IncomingRequest, Message, Negotiate, Request, RequestInterface,
+Response, ResponseInterface, URI, UserAgent</p></li>
+<li><p>\ Files \ FileCollection, UploadedFile, UploadedFileInterface</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Helpers</dt><dd><ul>
+<li><p>… array, cookie, date, filesystem, form, html, inflector, number,
+security, text, url</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Honeypot</dt><dd><ul>
+<li><p>\ Honeypot</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>I18n</dt><dd><ul>
+<li><p>\ Time, TimeDifference</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Images</dt><dd><ul>
+<li><p>\ Image, ImageHandlerInterface</p></li>
+<li><p>\ Handlers … Base, GD, ImageMagick</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Language</dt><dd><ul>
+<li><p>\ Language</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Log</dt><dd><ul>
+<li><p>Logger, LoggerAwareTrait</p></li>
+<li><p>\ Handlers …  Base, ChromeLogger, File, HandlerInterface</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Pager</dt><dd><ul>
+<li><p>\ Pager, PagerInterface, PagerRenderer</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Router</dt><dd><ul>
+<li><p>\ RouteCollection, RouteCollectionInterface, Router, RouterInterface</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Security</dt><dd><ul>
+<li><p>\ Security</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Session</dt><dd><ul>
+<li><p>\ Session, SessionInterface</p></li>
+<li><p>\ Handlers … Base, File, Memcached, Redis</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Test</dt><dd><ul>
+<li><p>\ CIDatabaseTestCase, CIUnitTestCase, FeatureResponse, FeatureTestCase, ReflectionHelper</p></li>
+<li><p>\ Filters \ CITestStreamFilter</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>ThirdParty (bundled)</dt><dd><ul>
+<li><p>\ Kint (for \Debug)</p></li>
+<li><p>\ PSR \ Log (for \Log)</p></li>
+<li><p>\ ZendEscaper \ Escaper (for \View)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Throttle</dt><dd><ul>
+<li><p>\ Throttler, ThrottlerInterface</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Typography</dt><dd><ul>
+<li><p>\ Typography</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Validation</dt><dd><ul>
+<li><p>\ CreditCardRules, FileRules, FormatRules, Rules, Validation, ValidationInterface</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>View</dt><dd><ul>
+<li><p>\ Cell, Filters, Parser, Plugins, RendererInterface, View</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="v4.0.0-alpha.2.html" class="btn btn-neutral" title="Version 4.0.0-alpha.2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 CodeIgniter Foundation.
+      Last updated on Jan 22, 2020.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'4.0.0-rc.3',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  false,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
